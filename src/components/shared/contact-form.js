@@ -139,7 +139,7 @@ const ContactForm = ({title, caption}) => {
                     <Button
                         onClick={formik.handleSubmit}
                         type="submit"
-                        color="secondary"
+                        color="primary"
                         disableElevation={true}
                         variant="contained"
                         sx={{textTransform: 'capitalize'}}

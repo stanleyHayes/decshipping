@@ -30,13 +30,9 @@ const ContactPage = () => {
                         <Grid container={true} spacing={4}>
                             <Grid item={true} xs={12} md={6}>
                                 <Box>
-                                    <Typography align="center" variant="body2" sx={{color: 'text.secondary', mb: 2}}>
-                                        To get in touch with DEC Shipping, please call or email us. For site specific
-                                        contact details please use the form below.
-                                    </Typography>
                                     <ContactForm
                                         title="Get in touch with us"
-                                        caption="Send us a message and our customer support will help you find answers to your questions."
+                                        caption="To get in touch with DEC Shipping, please call or email us. For site specific contact details please use the form below."
                                     />
                                 </Box>
                             </Grid>

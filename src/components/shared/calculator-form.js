@@ -44,7 +44,7 @@ const CalculatorForm = () => {
                     elevation={0}
                     sx={{}}>
                     <CardContent>
-                        <Box sx={{mb: 4}}>
+                        <Box sx={{mb: 2}}>
                             <Grid container={true} spacing={2}>
                                 <Grid item={true} xs={12} md={6}>
                                     <TextField
