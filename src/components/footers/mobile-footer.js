@@ -78,7 +78,6 @@ const MobileFooter = () => {
                             <MUILink href="tel:+10095555420" underline="none">
                                 <Typography
                                     variant="body2"
-                                    align="center"
                                     sx={{color: 'text.secondary'}}>
                                     +1 (009)-555-540
                                 </Typography>
@@ -86,7 +85,6 @@ const MobileFooter = () => {
                             <MUILink href="mailto:hello@decshipping.com" underline="none">
                                 <Typography
                                     variant="body2"
-                                    align="center"
                                     sx={{color: 'text.secondary'}}>
                                     hello@decshipping.com
                                 </Typography>
