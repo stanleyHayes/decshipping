@@ -20,8 +20,8 @@ const SidebarLink = ({path, label, active, icon}) => {
                     justifyContent: 'flex-start',
                     borderLeftWidth: active ? 3 : 0,
                     borderLeftStyle: active ? 'solid' : false,
-                    borderLeftColor: active ? 'secondary.main' : false,
-                    backgroundColor: active ? 'light.secondary' : false,
+                    borderLeftColor: active ? 'primary.main' : false,
+                    backgroundColor: active ? 'light.primary' : false,
                     px: 2
                 }}
                 direction="row" justifyContent="space-between" alignItems="center">
@@ -33,7 +33,7 @@ const SidebarLink = ({path, label, active, icon}) => {
                     sx={{
                         borderRadius: 0,
                         justifyContent: 'flex-start',
-                        color: active ? 'secondary.main' : 'text.primary',
+                        color: active ? 'text.primary' : 'text.secondary',
                         textTransform: 'capitalize',
                     }}>
                     {label}
@@ -41,7 +41,7 @@ const SidebarLink = ({path, label, active, icon}) => {
                 <ChevronRight
                     sx={{
                         cursor: 'pointer',
-                        color: active ? 'secondary.main': 'text.primary',
+                        color: active ? 'primary.main': 'text.primary',
                         borderBottomRightRadius: 4,
                         borderTopRightRadius: 8,
                         borderBottomLeftRadius: 8,

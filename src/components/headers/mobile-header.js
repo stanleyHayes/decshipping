@@ -18,7 +18,7 @@ const MobileHeader = () => {
                         <img
                             src={logo}
                             alt=""
-                            style={{width: 50, height: 50, objectFit: 'cover', objectPosition: 'center'}}
+                            style={{width: 40, height: 40, objectFit: 'cover', objectPosition: 'center'}}
                         />
                     </Link>
                 </Stack>
@@ -27,16 +27,12 @@ const MobileHeader = () => {
                         <Button
                             size="small"
                             variant="outlined"
+                            color="primary"
                             sx={{
                                 borderWidth: 2,
-                                backgroundColor: 'light.active',
-                                borderBottomRightRadius: 4,
-                                borderTopRightRadius: 12,
-                                borderBottomLeftRadius: 12,
-                                borderTopLeftRadius: 4,
+                                backgroundColor: 'light.primary',
                                 textTransform: 'capitalize',
-                                color: 'text.active',
-                                borderColor: 'text.active'
+                                borderColor: 'primary.main'
                             }}>
                             Login
                         </Button>
@@ -44,60 +40,54 @@ const MobileHeader = () => {
                     <Link to='/auth/login' style={{textDecoration: 'none'}}>
                         <Button
                             variant="contained"
-                            color="secondary"
+                            color="primary"
                             size="small"
                             disableElevation={true}
-                            sx={{
-                                borderBottomRightRadius: 4,
-                                borderTopRightRadius: 12,
-                                borderBottomLeftRadius: 12,
-                                borderTopLeftRadius: 4,
-                                textTransform: 'capitalize'
-                            }}>
+                            sx={{textTransform: 'capitalize'}}>
                             Register
                         </Button>
                     </Link>
                     <Menu
+                        color="primary"
                         sx={{
-                            backgroundColor: 'light.active',
+                            backgroundColor: 'light.primary',
                             borderBottomRightRadius: 4,
-                            borderTopRightRadius: 8,
-                            borderBottomLeftRadius: 8,
+                            borderTopRightRadius: 12,
+                            borderBottomLeftRadius: 12,
                             borderTopLeftRadius: 4,
                             padding: 0.4,
                             fontSize: 32,
-                            cursor: 'pointer',
-                            color: 'white',
+                            cursor: 'pointer'
                         }}
                         onClick={() => dispatch(openDrawer())}
                     />
 
                     {themeVariant === 'dark' ? (
                         <LightMode
+                            color="primary"
                             sx={{
-                                backgroundColor: 'light.active',
+                                backgroundColor: 'light.primary',
                                 borderBottomRightRadius: 4,
-                                borderTopRightRadius: 8,
-                                borderBottomLeftRadius: 8,
+                                borderTopRightRadius: 12,
+                                borderBottomLeftRadius: 12,
                                 borderTopLeftRadius: 4,
                                 padding: 0.4,
                                 fontSize: 32,
-                                cursor: 'pointer',
-                                color: 'white'
+                                cursor: 'pointer'
                             }}
                             onClick={() => dispatch(toggleTheme())}
                         />
                     ) : (
                         <DarkMode
+                            color="primary"
                             sx={{
-                                backgroundColor: 'light.active',
+                                backgroundColor: 'light.primary',
                                 borderBottomRightRadius: 4,
-                                borderTopRightRadius: 8,
-                                borderBottomLeftRadius: 8,
+                                borderTopRightRadius: 12,
+                                borderBottomLeftRadius: 12,
                                 borderTopLeftRadius: 4,
                                 padding: 0.4,
-                                fontSize: 32,
-                                color: 'white'
+                                fontSize: 32
                             }}
                             onClick={() => dispatch(toggleTheme())}
                         />

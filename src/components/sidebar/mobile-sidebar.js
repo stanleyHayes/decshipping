@@ -37,28 +37,28 @@ const MobileSidebar = () => {
                         onClick={() => dispatch(toggleTheme())}
                         sx={{
                             cursor: 'pointer',
-                            color: 'secondary.main',
+                            color: 'primary.main',
                             borderBottomRightRadius: 4,
                             borderTopRightRadius: 16,
                             borderBottomLeftRadius: 16,
                             borderTopLeftRadius: 4,
                             padding: 1,
                             fontSize: 32,
-                            backgroundColor: 'light.secondary'
+                            backgroundColor: 'light.primary'
                         }}/>
                 ) : (
                     <LightMode
                         onClick={() => dispatch(toggleTheme())}
                         sx={{
                             cursor: 'pointer',
-                            color: 'secondary.main',
+                            color: 'primary.main',
                             borderBottomRightRadius: 4,
                             borderTopRightRadius: 16,
                             borderBottomLeftRadius: 16,
                             borderTopLeftRadius: 4,
                             padding: 1,
                             fontSize: 32,
-                            backgroundColor: 'light.secondary'
+                            backgroundColor: 'light.primary'
                         }}/>
                 )}
 
@@ -66,14 +66,14 @@ const MobileSidebar = () => {
                     onClick={() => dispatch(closeDrawer())}
                     sx={{
                         cursor: 'pointer',
-                        color: 'secondary.main',
+                        color: 'primary.main',
                         borderBottomRightRadius: 4,
                         borderTopRightRadius: 16,
                         borderBottomLeftRadius: 16,
                         borderTopLeftRadius: 4,
                         padding: 1,
                         fontSize: 32,
-                        backgroundColor: 'light.secondary'
+                        backgroundColor: 'light.primary'
                     }}/>
 
             </Stack>
@@ -88,20 +88,20 @@ const MobileSidebar = () => {
                             <Home
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'secondary.main',
+                                    color: 'primary.main',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 4,
                                     padding: 0.4,
                                     fontSize: 36,
-                                    backgroundColor: 'light.secondary'
+                                    backgroundColor: 'light.primary'
                                 }}/>
                         ) : (
                             <HomeOutlined
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'text.secondary',
+                                    color: 'text.primary',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
@@ -122,20 +122,20 @@ const MobileSidebar = () => {
                             <MiscellaneousServices
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'secondary.main',
+                                    color: 'primary.main',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 4,
                                     padding: 0.4,
                                     fontSize: 36,
-                                    backgroundColor: 'light.secondary'
+                                    backgroundColor: 'light.primary'
                                 }}/>
                         ) : (
                             <MiscellaneousServicesOutlined
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'text.secondary',
+                                    color: 'text.primary',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
@@ -157,20 +157,20 @@ const MobileSidebar = () => {
                             <Info
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'secondary.main',
+                                    color: 'primary.main',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 4,
                                     padding: 0.4,
                                     fontSize: 36,
-                                    backgroundColor: 'light.secondary'
+                                    backgroundColor: 'light.primary'
                                 }}/>
                         ) : (
                             <InfoOutlined
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'text.secondary',
+                                    color: 'text.primary',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
@@ -185,27 +185,27 @@ const MobileSidebar = () => {
 
                 <SidebarLink
                     label="Blog"
-                    active={pathname === '/blog'}
-                    path="/blog"
+                    active={pathname === '/articles'}
+                    path="/articles"
                     icon={
-                        pathname === '/blog' ? (
+                        pathname === '/articles' ? (
                             <Article
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'secondary.main',
+                                    color: 'primary.main',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 4,
                                     padding: 0.4,
                                     fontSize: 36,
-                                    backgroundColor: 'light.secondary'
+                                    backgroundColor: 'light.primary'
                                 }}/>
                         ) : (
                             <ArticleOutlined
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'text.secondary',
+                                    color: 'text.primary',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
@@ -227,20 +227,20 @@ const MobileSidebar = () => {
                             <ContactPage
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'secondary.main',
+                                    color: 'primary.main',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
                                     borderTopLeftRadius: 4,
                                     padding: 0.4,
                                     fontSize: 36,
-                                    backgroundColor: 'light.secondary'
+                                    backgroundColor: 'light.primary'
                                 }}/>
                         ) : (
                             <ContactPageOutlined
                                 sx={{
                                     cursor: 'pointer',
-                                    color: 'text.secondary',
+                                    color: 'text.primary',
                                     borderBottomRightRadius: 4,
                                     borderTopRightRadius: 8,
                                     borderBottomLeftRadius: 8,
