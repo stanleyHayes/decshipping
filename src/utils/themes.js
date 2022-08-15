@@ -2,7 +2,7 @@ import {createTheme} from "@mui/material";
 
 const lightTheme = createTheme({
     typography: {
-        fontFamily: 'TTSquares, EuclidCircularB, GoogleSans, TTSquares'
+        fontFamily: 'GoogleSans, EuclidCircularB, TTSquares'
     },
     palette: {
         primary: {
@@ -49,7 +49,7 @@ const lightTheme = createTheme({
 
 const darkTheme = createTheme({
     typography: {
-        fontFamily: 'TTSquares, EuclidCircularB, GoogleSans, TTSquares'
+        fontFamily: 'GoogleSans, TTSquares, EuclidCircularB, GoogleSans'
     },
     palette: {
         primary: {
