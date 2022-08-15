@@ -125,7 +125,7 @@ const RegisterPage = () => {
                     justifyContent: 'center',
                     overflowY: 'scroll',
                 }}>
-                {authLoading && <LinearProgress variant="query" color="secondary"/>}
+                {authLoading && <LinearProgress variant="query" color="primary"/>}
                 <Container maxWidth="md">
                     <Box sx={{alignItems: "center", display: 'flex'}} flexGrow={1}>
                         <form
@@ -147,7 +147,7 @@ const RegisterPage = () => {
 
                                 <Box mb={2}>
                                     <Button
-                                        color="secondary"
+                                        color="primary"
                                         size="large"
                                         sx={{textTransform: 'capitalize'}}
                                         onClick={() => navigate(-1)}
@@ -158,31 +158,31 @@ const RegisterPage = () => {
                                 </Box>
 
                                 <Stack mb={2} direction="row" spacing={1}>
-                                    <Typography variant="h5" sx={{color: 'secondary.main'}}>
+                                    <Typography variant="h5" sx={{color: 'text.primary'}}>
                                         Sign
                                     </Typography>
-                                    <Typography variant="h5" sx={{color: 'text.primary'}}>
+                                    <Typography variant="h5" sx={{color: 'primary.main'}}>
                                         Up
                                     </Typography>
                                 </Stack>
 
-                                <Typography variant="h4" sx={{color: 'secondary.main', mb: 2}}>
-                                    Tribute
+                                <Typography variant="h4" sx={{color: 'primary.main', mb: 2}}>
+                                    DEC Shipping
                                 </Typography>
 
 
                                 <Stack mb={2} direction="row" spacing={2} alignItems="center">
                                     <Typography
                                         variant="body2"
-                                        sx={{color: 'text.secondary', fontWeight: 500}}>
+                                        sx={{color: 'text.primary', fontWeight: 500}}>
                                         Already have an account?
                                     </Typography>
                                     <Typography
                                         variant="body2"
-                                        sx={{color: 'text.secondary', fontWeight: 500}}>
+                                        sx={{color: 'text.primary', fontWeight: 500}}>
                                         <Link
                                             style={{
-                                                color: theme.palette.secondary.main,
+                                                color: theme.palette.primary.main,
                                                 textDecoration: 'none'
                                             }}
                                             to="/auth/login">
@@ -197,7 +197,7 @@ const RegisterPage = () => {
                                             <Typography
                                                 mb={1}
                                                 variant="body2"
-                                                sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 First Name
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
@@ -212,9 +212,9 @@ const RegisterPage = () => {
                                                             <PersonOutlined
                                                                 sx={{
                                                                     cursor: 'pointer',
-                                                                    color: 'secondary.main',
+                                                                    color: 'primary.main',
                                                                     padding: 1,
-                                                                    fontSize: 24,
+                                                                    fontSize: 32,
                                                                 }}
                                                             />
                                                         </InputAdornment>
@@ -241,7 +241,7 @@ const RegisterPage = () => {
                                         <Box>
                                             <Typography
                                                 mb={1} variant="body2"
-                                                sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 Last Name
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
@@ -256,9 +256,9 @@ const RegisterPage = () => {
                                                             <PersonOutlined
                                                                 sx={{
                                                                     cursor: 'pointer',
-                                                                    color: 'secondary.main',
+                                                                    color: 'primary.main',
                                                                     padding: 1,
-                                                                    fontSize: 24,
+                                                                    fontSize: 32,
                                                                 }}
                                                             />
                                                         </InputAdornment>
@@ -288,7 +288,7 @@ const RegisterPage = () => {
                                             <Typography
                                                 mb={1}
                                                 variant="body2"
-                                                sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 Email
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
@@ -303,9 +303,9 @@ const RegisterPage = () => {
                                                             <MailOutline
                                                                 sx={{
                                                                     cursor: 'pointer',
-                                                                    color: 'secondary.main',
+                                                                    color: 'primary.main',
                                                                     padding: 1,
-                                                                    fontSize: 24,
+                                                                    fontSize: 32,
                                                                 }}
                                                             />
                                                         </InputAdornment>
@@ -332,7 +332,7 @@ const RegisterPage = () => {
                                         <Box>
                                             <Typography
                                                 mb={1} variant="body2"
-                                                sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 Username
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
@@ -347,9 +347,9 @@ const RegisterPage = () => {
                                                             <PersonOutline
                                                                 sx={{
                                                                     cursor: 'pointer',
-                                                                    color: 'secondary.main',
+                                                                    color: 'primary.main',
                                                                     padding: 1,
-                                                                    fontSize: 24,
+                                                                    fontSize: 32,
                                                                 }}
                                                             />
                                                         </InputAdornment>
@@ -379,7 +379,7 @@ const RegisterPage = () => {
                                             <Typography
                                                 mb={1}
                                                 variant="body2"
-                                                sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 Phone
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
@@ -394,9 +394,9 @@ const RegisterPage = () => {
                                                             <CallOutlined
                                                                 sx={{
                                                                     cursor: 'pointer',
-                                                                    color: 'secondary.main',
+                                                                    color: 'primary.main',
                                                                     padding: 1,
-                                                                    fontSize: 24,
+                                                                    fontSize: 32,
                                                                 }}
                                                             />
                                                         </InputAdornment>
@@ -425,7 +425,7 @@ const RegisterPage = () => {
                                                 mb={1}
                                                 variant="body2"
                                                 sx={{
-                                                    color: 'secondary.main',
+                                                    color: 'primary.main',
                                                     fontWeight: 'bold'
                                                 }}>
                                                 Gender
@@ -435,7 +435,7 @@ const RegisterPage = () => {
                                                     id="gender"
                                                     name="gender"
                                                     margin="dense"
-                                                    color="secondary"
+                                                    color="primary"
                                                     fullWidth={true}
                                                     elevation={1}
                                                     onChange={formik.handleChange}
@@ -463,7 +463,7 @@ const RegisterPage = () => {
                                             <Typography
                                                 mb={1} variant="body2"
                                                 sx={{
-                                                    color: 'secondary.main',
+                                                    color: 'primary.main',
                                                     fontWeight: 'bold'
                                                 }}>
                                                 Password
@@ -483,18 +483,18 @@ const RegisterPage = () => {
                                                                     onClick={() => setShowPassword(false)}
                                                                     sx={{
                                                                         cursor: 'pointer',
-                                                                        color: 'secondary.main',
+                                                                        color: 'primary.main',
                                                                         padding: 1,
-                                                                        fontSize: 24,
+                                                                        fontSize: 32,
                                                                     }}
                                                                 /> :
                                                                 <VisibilityOutlined
                                                                     onClick={() => setShowPassword(true)}
                                                                     sx={{
                                                                         cursor: 'pointer',
-                                                                        color: 'secondary.main',
+                                                                        color: 'primary.main',
                                                                         padding: 1,
-                                                                        fontSize: 24,
+                                                                        fontSize: 32,
                                                                     }}
                                                                 />}
                                                         </InputAdornment>
@@ -522,7 +522,7 @@ const RegisterPage = () => {
                                             <Typography
                                                 mb={1} variant="body2"
                                                 sx={{
-                                                    color: 'secondary.main',
+                                                    color: 'primary.main',
                                                     fontWeight: 'bold'
                                                 }}>
                                                 Confirm Password
@@ -542,18 +542,18 @@ const RegisterPage = () => {
                                                                     onClick={() => setShowPassword(false)}
                                                                     sx={{
                                                                         cursor: 'pointer',
-                                                                        color: 'secondary.main',
+                                                                        color: 'primary.main',
                                                                         padding: 1,
-                                                                        fontSize: 24,
+                                                                        fontSize: 32,
                                                                     }}
                                                                 /> :
                                                                 <VisibilityOutlined
                                                                     onClick={() => setShowPassword(true)}
                                                                     sx={{
                                                                         cursor: 'pointer',
-                                                                        color: 'secondary.main',
+                                                                        color: 'primary.main',
                                                                         padding: 1,
-                                                                        fontSize: 24,
+                                                                        fontSize: 32,
                                                                     }}
                                                                 />}
                                                         </InputAdornment>
@@ -581,21 +581,14 @@ const RegisterPage = () => {
                                     onClick={formik.handleSubmit}
                                     type="submit"
                                     size="large"
-                                    color="secondary"
-                                    sx={{
-                                        textTransform: 'capitalize',
-                                        py: 1.2,
-                                        borderTopRightRadius: 32,
-                                        borderBottomRightRadius: 0,
-                                        borderBottomLeftRadius: 32,
-                                        borderTopLeftRadius: 32,
-                                    }}
+                                    color="primary"
+                                    sx={{textTransform: 'capitalize'}}
                                     fullWidth={false}
                                     loadingPosition="start"
                                     startIcon={authLoading ?
-                                        <CircularProgress color="secondary"/> : null}
+                                        <CircularProgress color="primary"/> : null}
                                     loadingIndicator={authLoading ?
-                                        <CircularProgress color="secondary"/> : null}
+                                        <CircularProgress color="primary"/> : null}
                                     loading={authLoading}
                                     variant="contained"
                                     disableElevation={true}>

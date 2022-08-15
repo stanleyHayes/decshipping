@@ -75,15 +75,15 @@ const ResetPasswordPage = () => {
                 <Container maxWidth="sm">
                     <form onSubmit={formik.handleSubmit}>
                         <Stack direction="column" spacing={3}>
-                            <Typography mb={2} variant="h4" sx={{color: 'secondary.main'}}>
-                                Tribute
+                            <Typography mb={2} variant="h4" sx={{color: 'primary.main'}}>
+                                DEC Shipping
                             </Typography>
 
-                            <Stack mb={2} direction="row" spacing={2}>
-                                <Typography variant="h6" sx={{color: 'secondary.main'}}>
+                            <Stack mb={2} direction="row" spacing={1}>
+                                <Typography variant="h6" sx={{color: 'text.primary'}}>
                                     Reset
                                 </Typography>
-                                <Typography variant="h6" sx={{color: 'text.primary'}}>
+                                <Typography variant="h6" sx={{color: 'primary.main'}}>
                                     Password
                                 </Typography>
                             </Stack>
@@ -94,7 +94,7 @@ const ResetPasswordPage = () => {
                             <Box>
                                 <Typography
                                     mb={1} variant="body2"
-                                    sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                    sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                     Current Password
                                 </Typography>
                                 <FormControl fullWidth={true} variant="outlined">
@@ -121,10 +121,10 @@ const ResetPasswordPage = () => {
                                                             borderBottomLeftRadius: 32,
                                                             borderTopLeftRadius: 32,
                                                             cursor: 'pointer',
-                                                            color: 'secondary.main',
+                                                            color: 'primary.main',
                                                             borderRadius: '100%',
                                                             padding: 1,
-                                                            fontSize: 24,
+                                                            fontSize: 32,
                                                         }}
                                                     /> :
                                                     <Visibility
@@ -135,10 +135,10 @@ const ResetPasswordPage = () => {
                                                             borderBottomLeftRadius: 32,
                                                             borderTopLeftRadius: 32,
                                                             cursor: 'pointer',
-                                                            color: 'secondary.main',
+                                                            color: 'primary.main',
                                                             borderRadius: '100%',
                                                             padding: 1,
-                                                            fontSize: 24,
+                                                            fontSize: 32,
                                                         }}
                                                     />}
                                             </InputAdornment>
@@ -161,7 +161,7 @@ const ResetPasswordPage = () => {
                                 <Typography
                                     mb={1}
                                     variant="body2"
-                                    sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                    sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                     New Password
                                 </Typography>
                                 <FormControl fullWidth={true} variant="outlined">
@@ -184,10 +184,10 @@ const ResetPasswordPage = () => {
                                                             borderBottomLeftRadius: 32,
                                                             borderTopLeftRadius: 32,
                                                             cursor: 'pointer',
-                                                            color: 'secondary.main',
+                                                            color: 'primary.main',
                                                             borderRadius: '100%',
                                                             padding: 1,
-                                                            fontSize: 24,
+                                                            fontSize: 32,
                                                         }}
                                                     /> :
                                                     <Visibility
@@ -198,10 +198,10 @@ const ResetPasswordPage = () => {
                                                             borderBottomLeftRadius: 32,
                                                             borderTopLeftRadius: 32,
                                                             cursor: 'pointer',
-                                                            color: 'secondary.main',
+                                                            color: 'primary.main',
                                                             borderRadius: '100%',
                                                             padding: 1,
-                                                            fontSize: 24,
+                                                            fontSize: 32,
                                                         }}
                                                     />}
                                             </InputAdornment>
@@ -228,7 +228,7 @@ const ResetPasswordPage = () => {
                                 <Typography
                                     mb={1}
                                     variant="body2"
-                                    sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                    sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                     Confirm Password
                                 </Typography>
                                 <FormControl fullWidth={true} variant="outlined">
@@ -252,10 +252,10 @@ const ResetPasswordPage = () => {
                                                             borderBottomLeftRadius: 32,
                                                             borderTopLeftRadius: 32,
                                                             cursor: 'pointer',
-                                                            color: 'secondary.main',
+                                                            color: 'primary.main',
                                                             borderRadius: '100%',
                                                             padding: 1,
-                                                            fontSize: 24,
+                                                            fontSize: 32,
                                                         }}
                                                     /> :
                                                     <Visibility
@@ -266,10 +266,10 @@ const ResetPasswordPage = () => {
                                                             borderBottomLeftRadius: 32,
                                                             borderTopLeftRadius: 32,
                                                             cursor: 'pointer',
-                                                            color: 'secondary.main',
+                                                            color: 'primary.main',
                                                             borderRadius: '100%',
                                                             padding: 1,
-                                                            fontSize: 24,
+                                                            fontSize: 32,
                                                         }}
                                                     />}
                                             </InputAdornment>
@@ -294,15 +294,8 @@ const ResetPasswordPage = () => {
 
                             <LoadingButton
                                 size="large"
-                                color="secondary"
-                                sx={{
-                                    borderTopRightRadius: 32,
-                                    borderBottomRightRadius: 0,
-                                    borderBottomLeftRadius: 32,
-                                    borderTopLeftRadius: 32,
-                                    textTransform: 'capitalize',
-                                    py: 1.2
-                                }}
+                                color="primary"
+                                sx={{textTransform: 'capitalize'}}
                                 loadingPosition="start"
                                 startIcon={formik.isSubmitting ?
                                     <CircularProgress color="secondary"/> : null}

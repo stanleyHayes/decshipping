@@ -49,27 +49,21 @@ const VerificationAcknowledgmentPage = () => {
                     <Typography mb={3} variant="h6" sx={{color: 'text.secondary'}}>
                         Welcome to
                     </Typography>
-                    <Typography mb={3} variant="h4" sx={{color: 'secondary.main'}}>
-                        Tribute
+                    <Typography mb={3} variant="h4" sx={{color: 'primary.main'}}>
+                        DEC Shipping
                     </Typography>
                     <Typography mb={4} variant="body1" sx={{color: 'text.secondary', fontWeight: 400}}>
-                        Tribute is a platform where you can share with the world the stories and memories of your
-                        ancestors as well as your own stories and memories. Our Turning Hearts Medallion gives access to
-                        anyone who scans it the ability to learn and interact with those who have gone on.
+                        Take the complexity out of customs Freight Solutions with customs brokerage services
                     </Typography>
                     <Box>
                         <Grid container={true} spacing={2} alignItems="center">
                             <Grid item={true} xs={12}>
                                 <Link to="/auth/login" style={{textDecoration: 'none'}}>
                                     <Button
-                                        color="secondary"
+                                        color="primary"
                                         fullWidth={true}
                                         sx={{
-                                            textTransform: 'capitalize',
-                                            borderTopRightRadius: 32,
-                                            borderBottomRightRadius: 0,
-                                            borderBottomLeftRadius: 32,
-                                            borderTopLeftRadius: 32,
+                                            textTransform: 'capitalize'
                                         }}
                                         variant="contained"
                                         disableElevation={true}>

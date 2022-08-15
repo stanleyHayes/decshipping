@@ -83,15 +83,15 @@ const ForgotPasswordPage = () => {
                                             </Button>
                                         </Box>
 
-                                        <Typography mb={2} variant="h4" sx={{color: 'secondary.main'}}>
-                                            Tribute
+                                        <Typography mb={2} variant="h4" sx={{color: 'primary.main'}}>
+                                            DEC Shipping
                                         </Typography>
 
                                         <Stack direction="row" spacing={2}>
-                                            <Typography variant="h6" sx={{color: 'secondary.main'}}>
+                                            <Typography variant="h6" sx={{color: 'primary.main'}}>
                                                 Forgot
                                             </Typography>
-                                            <Typography variant="h6" sx={{color: 'text.primary'}}>
+                                            <Typography variant="h6" sx={{color: 'text.secondary'}}>
                                                 Password
                                             </Typography>
                                         </Stack>
@@ -104,7 +104,7 @@ const ForgotPasswordPage = () => {
                                             <Typography
                                                 mb={1} variant="body2"
                                                 sx={{
-                                                    color: 'secondary.main',
+                                                    color: 'primary.main',
                                                     fontWeight: 'bold'
                                                 }}>
                                                 Email
@@ -136,20 +136,13 @@ const ForgotPasswordPage = () => {
                                         <LoadingButton
                                             type="submit"
                                             size="large"
-                                            color="secondary"
-                                            sx={{
-                                                textTransform: 'capitalize',
-                                                py: 1.2,
-                                                borderTopRightRadius: 32,
-                                                borderBottomRightRadius: 0,
-                                                borderBottomLeftRadius: 32,
-                                                borderTopLeftRadius: 32,
-                                            }}
+                                            color="primary"
+                                            sx={{textTransform: 'capitalize'}}
                                             loadingPosition="start"
                                             startIcon={formik.isSubmitting ?
-                                                <CircularProgress color="secondary"/> : null}
+                                                <CircularProgress color="primary"/> : null}
                                             loadingIndicator={formik.isSubmitting ?
-                                                <CircularProgress color="secondary"/> : null}
+                                                <CircularProgress color="primary"/> : null}
                                             loading={formik.isSubmitting}
                                             fullWidth={true}
                                             variant="contained"

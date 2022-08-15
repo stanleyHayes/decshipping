@@ -43,7 +43,7 @@ const LoginPage = () => {
 
     const formik = useFormik({
         initialValues: {
-            usernameOrEmailOrPhone: '',
+            email: '',
             password: '',
         },
         onSubmit: (values, {resetForm, setSubmitting}) => {
@@ -52,7 +52,7 @@ const LoginPage = () => {
         validateOnBlur: true,
         validateOnChange: true,
         validationSchema: yup.object({
-            usernameOrEmailOrPhone: yup.string().required('usernameOrEmailOrPhone required'),
+            email: yup.string().required('email required'),
             password: yup.string().required('Password required'),
         })
     });
@@ -132,8 +132,8 @@ const LoginPage = () => {
                                             Welcome
                                         </Typography>
 
-                                        <Typography mb={2} variant="h5" sx={{color: 'secondary.main'}}>
-                                            Tribute
+                                        <Typography mb={2} variant="h5" sx={{color: 'primary.main'}}>
+                                            DEC Shipping
                                         </Typography>
 
                                         <Stack mb={4} direction="row" spacing={2} alignItems="center">
@@ -147,7 +147,7 @@ const LoginPage = () => {
                                                 sx={{color: 'text.secondary', fontWeight: 500}}>
                                                 <Link
                                                     style={{
-                                                        color: theme.palette.secondary.main,
+                                                        color: theme.palette.primary.main,
                                                         textDecoration: 'none'
                                                     }}
                                                     to="/auth/register">
@@ -157,18 +157,17 @@ const LoginPage = () => {
                                         </Stack>
 
                                         <Box mb={4}>
-                                            <Typography mb={1} variant="body2"
-                                                        sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                            <Typography
+                                                mb={1} variant="body2"
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 Email
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
-                                                <InputLabel
-                                                    htmlFor="usernameOrEmailOrPhone">Email</InputLabel>
                                                 <OutlinedInput
                                                     fullWidth={true}
-                                                    value={formik.values.usernameOrEmailOrPhone}
-                                                    id="usernameOrEmailOrPhone"
-                                                    name="usernameOrEmailOrPhone"
+                                                    value={formik.values.email}
+                                                    id="email"
+                                                    name="email"
                                                     type="text"
                                                     endAdornment={
                                                         <InputAdornment
@@ -176,26 +175,25 @@ const LoginPage = () => {
                                                             <MailOutline
                                                                 sx={{
                                                                     cursor: 'pointer',
-                                                                    color: 'secondary.main',
+                                                                    color: 'primary.main',
                                                                     padding: 1,
-                                                                    fontSize: 24,
+                                                                    fontSize: 32,
                                                                 }}
                                                             />
                                                         </InputAdornment>
                                                     }
-                                                    error={formik.touched.usernameOrEmailOrPhone && formik.errors.usernameOrEmailOrPhone}
+                                                    error={formik.touched.email && formik.errors.email}
                                                     onChange={formik.handleChange}
                                                     onBlur={formik.handleBlur}
                                                     placeholder="Enter username or email or phone"
                                                     required={true}
-                                                    label="Email"
                                                     size="medium"
                                                     margin="dense"
                                                 />
-                                                {formik.touched.usernameOrEmailOrPhone && formik.errors.usernameOrEmailOrPhone && (
+                                                {formik.touched.email && formik.errors.email && (
                                                     <FormHelperText
                                                         error={true}>
-                                                        {formik.errors.usernameOrEmailOrPhone}
+                                                        {formik.errors.email}
                                                     </FormHelperText>
                                                 )}
                                             </FormControl>
@@ -203,11 +201,10 @@ const LoginPage = () => {
 
                                         <Box mb={4}>
                                             <Typography mb={1} variant="body2"
-                                                        sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                        sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 Password
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
-                                                <InputLabel htmlFor="password">Password</InputLabel>
                                                 <OutlinedInput
                                                     fullWidth={true}
                                                     id="password"
@@ -222,18 +219,18 @@ const LoginPage = () => {
                                                                     onClick={() => setShowPassword(false)}
                                                                     sx={{
                                                                         cursor: 'pointer',
-                                                                        color: 'secondary.main',
+                                                                        color: 'primary.main',
                                                                         padding: 1,
-                                                                        fontSize: 24,
+                                                                        fontSize: 36,
                                                                     }}
                                                                 /> :
                                                                 <Visibility
                                                                     onClick={() => setShowPassword(true)}
                                                                     sx={{
                                                                         cursor: 'pointer',
-                                                                        color: 'secondary.main',
+                                                                        color: 'primary.main',
                                                                         padding: 1,
-                                                                        fontSize: 24,
+                                                                        fontSize: 36,
                                                                     }}
                                                                 />}
                                                         </InputAdornment>
@@ -243,7 +240,6 @@ const LoginPage = () => {
                                                     onBlur={formik.handleBlur}
                                                     placeholder="Enter password"
                                                     required={true}
-                                                    label="Password"
                                                     size="medium"
                                                     margin="dense"
                                                 />
@@ -259,7 +255,7 @@ const LoginPage = () => {
                                         <Typography mb={4} variant="body2" sx={{color: 'text.secondary'}}>
                                             <Link
                                                 style={{
-                                                    color: theme.palette.secondary.main,
+                                                    color: theme.palette.primary.main,
                                                     textDecoration: 'none'
                                                 }}
                                                 to="/auth/forgot-password">
@@ -270,15 +266,8 @@ const LoginPage = () => {
                                         <LoadingButton
                                             type="submit"
                                             size="large"
-                                            color="secondary"
-                                            sx={{
-                                                textTransform: 'capitalize',
-                                                py: 1.2,
-                                                borderTopRightRadius: 32,
-                                                borderBottomRightRadius: 0,
-                                                borderBottomLeftRadius: 32,
-                                                borderTopLeftRadius: 32,
-                                            }}
+                                            color="primary"
+                                            sx={{textTransform: 'capitalize'}}
                                             fullWidth={true}
                                             loadingPosition="start"
                                             startIcon={authLoading ?

@@ -110,13 +110,13 @@ const VerifyOtpPage = () => {
                                                         objectFit: 'contain',
                                                         objectPosition: 'center'
                                                     }}
-                                                    alt="The Book Station Logo"
+                                                    alt="DEC Shipping Logo"
                                                 />
                                             </Link>
                                             <Link to="/" style={{textDecoration: 'none'}}>
                                                 <Typography
                                                     sx={{color: 'text.primary'}}
-                                                    variant="h4">Tribute</Typography>
+                                                    variant="h4">DEC Shipping</Typography>
                                             </Link>
                                         </Stack>
                                     </Grid>
@@ -135,24 +135,14 @@ const VerifyOtpPage = () => {
                                             </Stack>
                                             {authError && (
                                                 <Alert
-                                                    sx={{
-                                                        borderTopRightRadius: 32,
-                                                        borderBottomRightRadius: 0,
-                                                        borderBottomLeftRadius: 32,
-                                                        borderTopLeftRadius: 32,
-                                                    }} severity="error">
+                                                    sx={{}} severity="error">
                                                     <AlertTitle>{authError}</AlertTitle>
                                                 </Alert>
                                             )}
 
                                             {authMessage && (
                                                 <Alert
-                                                    sx={{
-                                                        borderTopRightRadius: 32,
-                                                        borderBottomRightRadius: 0,
-                                                        borderBottomLeftRadius: 32,
-                                                        borderTopLeftRadius: 32,
-                                                    }}
+                                                    sx={{}}
                                                     severity="error">
                                                     <AlertTitle>{authMessage}</AlertTitle>
                                                 </Alert>
@@ -171,10 +161,6 @@ const VerifyOtpPage = () => {
                                                         value={formik.values.otp}
                                                         name="otp"
                                                         sx={{
-                                                            borderTopRightRadius: 32,
-                                                            borderBottomRightRadius: 0,
-                                                            borderBottomLeftRadius: 32,
-                                                            borderTopLeftRadius: 32,
                                                         }}
                                                         type={showPassword ? 'text' : 'password'}
                                                         endAdornment={
@@ -250,10 +236,6 @@ const VerifyOtpPage = () => {
                                                         variant="outlined"
                                                         size="small"
                                                         sx={{
-                                                            borderTopRightRadius: 32,
-                                                            borderBottomRightRadius: 0,
-                                                            borderBottomLeftRadius: 32,
-                                                            borderTopLeftRadius: 32,
                                                         }}>
                                                         Resend OTP
                                                     </Button>

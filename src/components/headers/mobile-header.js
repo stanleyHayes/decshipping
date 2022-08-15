@@ -37,7 +37,7 @@ const MobileHeader = () => {
                             Login
                         </Button>
                     </Link>
-                    <Link to='/auth/login' style={{textDecoration: 'none'}}>
+                    <Link to='/auth/register' style={{textDecoration: 'none'}}>
                         <Button
                             variant="contained"
                             color="primary"

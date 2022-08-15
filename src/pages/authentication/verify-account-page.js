@@ -96,12 +96,12 @@ const VerifyAccountPage = () => {
                         <Grid item={true} xs={12} lg={6}>
                             <Stack direction="column" spacing={2}>
 
-                                <Typography variant="h4" sx={{color: 'secondary.main'}}>
-                                    Tribute
+                                <Typography variant="h4" sx={{color: 'primary.main'}}>
+                                    DEC Shipping
                                 </Typography>
 
                                 <Stack mb={2} direction="row" spacing={2}>
-                                    <Typography variant="h6" sx={{color: 'secondary.main'}}>
+                                    <Typography variant="h6" sx={{color: 'primary.main'}}>
                                         Verify
                                     </Typography>
                                     <Typography variant="h6" sx={{color: 'text.primary'}}>
@@ -117,7 +117,7 @@ const VerifyAccountPage = () => {
                                         <Box>
                                             <Typography
                                                 mb={1} variant="body2"
-                                                sx={{color: 'secondary.main', fontWeight: 'bold'}}>
+                                                sx={{color: 'primary.main', fontWeight: 'bold'}}>
                                                 OTP
                                             </Typography>
                                             <FormControl fullWidth={true} variant="outlined">
@@ -183,15 +183,8 @@ const VerifyAccountPage = () => {
                                             type="submit"
                                             onClick={formik.handleSubmit}
                                             size="large"
-                                            color="secondary"
-                                            sx={{
-                                                borderTopRightRadius: 32,
-                                                borderBottomRightRadius: 0,
-                                                borderBottomLeftRadius: 32,
-                                                borderTopLeftRadius: 32,
-                                                textTransform: 'capitalize',
-                                                py: 1.2
-                                            }}
+                                            color="primary"
+                                            sx={{textTransform: 'capitalize'}}
                                             loadingPosition="start"
                                             startIcon={formik.isSubmitting ?
                                                 <CircularProgress color="secondary"/> : null}
