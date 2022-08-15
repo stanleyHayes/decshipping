@@ -16,6 +16,9 @@ import {
 import Overlay from "../../components/shared/overlay";
 import {Link} from "react-router-dom";
 import banner from "./../../assets/images/banners/home.jpg";
+import truck2 from "./../../assets/images/services/truck2-1.jpg";
+import image2 from "./../../assets/images/services/ocean-freight-img.jpg";
+import image3 from "./../../assets/images/services/air-freight-img.jpg";
 import {ArrowRightAlt} from "@mui/icons-material";
 import {DEC_SHIPPING_DATA} from "../../utils/data";
 import 'react-multi-carousel/lib/styles.css';
@@ -174,7 +177,7 @@ const HomePage = () => {
                                         of service in the sphere of customs clearance transportation worldwide for any
                                         cargo.
                                     </Typography>
-                                    <Typography variant="body2" sx={{color: 'text.secondary', mb: 1}}>
+                                    <Typography variant="body2" sx={{color: 'text.secondary', mb: 4}}>
                                         We pride ourselves on providing the best transport and shipping services
                                         available all over the world. Our skilled personnel, utilising the latest
                                         communications.
@@ -202,12 +205,12 @@ const HomePage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={truck2}
                                     sx={{
                                         borderRadius: 2,
                                         height: '100%',
                                         width: '100%',
-                                        objectFit: 'cover',
+                                        objectFit: 'contain',
                                         objectPosition: 'center'
                                     }}/>
                             </Grid>
@@ -221,12 +224,12 @@ const HomePage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={image2}
                                     sx={{
                                         borderRadius: 2,
                                         height: '100%',
                                         width: '100%',
-                                        objectFit: 'cover',
+                                        objectFit: 'contain',
                                         objectPosition: 'center'
                                     }}/>
                             </Grid>
@@ -293,18 +296,18 @@ const HomePage = () => {
 
                 <Box sx={{py: 8, backgroundColor: 'background.paper'}}>
                     <Container>
-                        <Grid container={true} justifyContent="space-between" alignItems="center">
+                        <Typography align="center" variant="h5" sx={{color: 'text.primary', mb: 4}}>
+                            Find out the approximate cost of delivery of your shipments
+                        </Typography>
+                        <Grid spacing={4} container={true} justifyContent="space-between">
                             <Grid item={true} xs={12} md={6}>
-                                <Typography variant="h5" sx={{color: 'text.primary', mb: 4}}>
-                                    Find out the approximate cost of delivery of your shipments
-                                </Typography>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={image3}
                                     sx={{
                                         height: '100%',
                                         width: '100%',
-                                        objectFit: 'cover',
+                                        objectFit: 'contain',
                                         objectPosition: 'center'
                                     }}/>
                             </Grid>

@@ -2,6 +2,11 @@ import Layout from "../../components/layout/layout";
 import {Box, CardMedia, Container, Divider, Grid, ListItem, ListItemText, Stack, Typography, List} from "@mui/material";
 import Banner from "../../components/shared/banner";
 import banner from "../../assets/images/banners/about.jpg";
+import image1 from "../../assets/images/services/blog5.jpg";
+import image2 from "../../assets/images/services/portfolio6.jpg";
+import image3 from "../../assets/images/services/blog6.jpg";
+import image4 from "../../assets/images/services/blog7.jpg";
+
 import {DEC_SHIPPING_DATA} from "../../utils/data";
 import Leader from "../../components/shared/leader";
 import Service from "../../components/shared/service";
@@ -34,7 +39,7 @@ const AboutPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={image4}
                                     sx={{
                                         height: '100%',
                                         width: '100%',
@@ -90,7 +95,7 @@ const AboutPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={image1}
                                     sx={{
                                         height: '100%',
                                         width: '100%',
@@ -122,18 +127,6 @@ const AboutPage = () => {
                     <Container>
                         <Grid spacing={4} container={true} justifyContent="space-between" alignItems="center">
                             <Grid item={true} xs={12} md={6}>
-                                <CardMedia
-                                    component="img"
-                                    src={banner}
-                                    sx={{
-                                        borderRadius: 2,
-                                        height: '100%',
-                                        width: '100%',
-                                        objectFit: 'cover',
-                                        objectPosition: 'center'
-                                    }}/>
-                            </Grid>
-                            <Grid item={true} xs={12} md={6}>
                                 <Box>
                                     <Typography variant="h5" sx={{color: 'text.primary', mb: 2}}>
                                         Between the point departure and destination there is DEC Shipping
@@ -155,40 +148,52 @@ const AboutPage = () => {
 
                                     <Grid container={true} spacing={2}>
                                         <Grid item={true} xs={12} md={4}>
-                                            <Typography variant="h5" sx={{color: 'text.primary', mb: 2}}>
+                                            <Typography variant="body1" sx={{color: 'text.primary', mb: 2, fontWeight: 'bold'}}>
                                                 100% Safe Delivery
                                             </Typography>
                                             <Typography
                                                 variant="body2"
-                                                sx={{color: 'text.secondary', fontWeight: 'bold'}}>
-                                                Organically grow the holistic world view of disruptive innovation via
-                                                workplace diversity.
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item={true} xs={12} md={2}>
-                                            <Typography variant="h5" sx={{color: 'text.primary', mb: 2}}>
-                                                Weather Insurance
-                                            </Typography>
-                                            <Typography
-                                                variant="body2"
-                                                sx={{color: 'text.secondary', fontWeight: 'bold'}}>
+                                                sx={{color: 'text.secondary'}}>
                                                 Organically grow the holistic world view of disruptive innovation via
                                                 workplace diversity.
                                             </Typography>
                                         </Grid>
                                         <Grid item={true} xs={12} md={4}>
-                                            <Typography variant="h5" sx={{color: 'text.primary', mb: 2}}>
+                                            <Typography variant="body1" sx={{color: 'text.primary', mb: 2, fontWeight: 'bold'}}>
+                                                Weather Insurance
+                                            </Typography>
+                                            <Typography
+                                                variant="body2"
+                                                sx={{color: 'text.secondary'}}>
+                                                Organically grow the holistic world view of disruptive innovation via
+                                                workplace diversity.
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item={true} xs={12} md={4}>
+                                            <Typography variant="body1" sx={{color: 'text.primary', mb: 2, fontWeight: 'bold'}}>
                                                 Fast & On Time
                                             </Typography>
                                             <Typography
                                                 variant="body2"
-                                                sx={{color: 'text.secondary', fontWeight: 'bold'}}>
+                                                sx={{color: 'text.secondary'}}>
                                                 Organically grow the holistic world view of disruptive innovation via
                                                 workplace diversity.
                                             </Typography>
                                         </Grid>
                                     </Grid>
                                 </Box>
+                            </Grid>
+                            <Grid item={true} xs={12} md={6}>
+                                <CardMedia
+                                    component="img"
+                                    src={image2}
+                                    sx={{
+                                        borderRadius: 2,
+                                        height: '100%',
+                                        width: '100%',
+                                        objectFit: 'cover',
+                                        objectPosition: 'center'
+                                    }}/>
                             </Grid>
                         </Grid>
                     </Container>
@@ -242,7 +247,7 @@ const AboutPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={image3}
                                     sx={{
                                         height: '100%',
                                         width: '100%',

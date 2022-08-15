@@ -1,7 +1,7 @@
-import leader1 from "./../assets/images/leaders/kirill-balobanov-2rIs8OH5ng0-unsplash.jpg";
-import leader2 from "./../assets/images/leaders/vidar-nordli-mathisen-_RWV-UinSUg-unsplash.jpg";
-import leader3 from "./../assets/images/leaders/mateo-avila-chinchilla-x_8oJhYU31k-unsplash.jpg";
-import leader4 from "./../assets/images/leaders/scott-rodgerson-ZLHBjxbCCEc-unsplash.jpg";
+import leader1 from "./../assets/images/leaders/leader1.jpg";
+import leader2 from "./../assets/images/leaders/leader2.jpg";
+import leader3 from "./../assets/images/leaders/leader3.jpg";
+import leader4 from "./../assets/images/leaders/leader4.jpg";
 import {FlightTakeoffOutlined, SailingOutlined, WarehouseOutlined} from "@mui/icons-material";
 
 const LEADERSHIP = [

@@ -1,6 +1,10 @@
 import Layout from "../../components/layout/layout";
 import {Box, Button, CardMedia, Container, Divider, Grid, Link, Stack, Typography} from "@mui/material";
 import banner from "../../assets/images/banners/about.jpg";
+import air from "../../assets/images/services/air-freight-img.jpg";
+import warehouse from "../../assets/images/services/gb1.jpg";
+import sea from "../../assets/images/services/ocean-freight-img.jpg";
+import contact from "../../assets/images/services/blog7.jpg";
 import Banner from "../../components/shared/banner";
 import {ArrowRightAlt} from "@mui/icons-material";
 
@@ -38,7 +42,7 @@ const ServicesPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={air}
                                     sx={{
                                         height: '100%',
                                         width: '100%',
@@ -95,7 +99,7 @@ const ServicesPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={warehouse}
                                     sx={{
                                         height: '100%',
                                         width: '100%',
@@ -115,7 +119,7 @@ const ServicesPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={sea}
                                     sx={{
                                         height: '100%',
                                         width: '100%',
@@ -192,7 +196,7 @@ const ServicesPage = () => {
                             <Grid item={true} xs={12} md={6}>
                                 <CardMedia
                                     component="img"
-                                    src={banner}
+                                    src={contact}
                                     sx={{
                                         borderRadius: 2,
                                         height: '100%',

@@ -212,7 +212,7 @@ const CalculatorForm = () => {
                         </Grid>
                     </Box>
 
-                    <Box sx={{mb: 2}}>
+                    <Box sx={{mb: 6}}>
                         <Grid container={true} spacing={2}>
                             <Grid item={true} xs={12} md={6}>
                                 <TextField
