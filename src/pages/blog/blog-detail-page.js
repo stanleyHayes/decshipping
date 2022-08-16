@@ -13,7 +13,6 @@ import {
     Typography
 } from "@mui/material";
 import Overlay from "../../components/shared/overlay";
-import banner from "../../assets/images/banners/home.jpg";
 import {useSelector} from "react-redux";
 import {selectArticle} from "../../redux/features/article/article-slice";
 import {useFormik} from "formik";
@@ -81,7 +80,8 @@ const BlogDetailPage = () => {
                                         {articleLoading ? (
                                             <Skeleton variant="text" animation="pulse"/>
                                         ) : (
-                                            <Typography variant="h4" sx={{color: 'text.primary', fontWeight: 200, mb: 4}}>
+                                            <Typography variant="h4"
+                                                        sx={{color: 'text.primary', fontWeight: 200, mb: 4}}>
                                                 {article && article.title}
                                             </Typography>
                                         )}
@@ -146,22 +146,11 @@ const BlogDetailPage = () => {
 
                                     </Stack>
 
-                                    {article && article.relatedArticles && article.relatedArticles.length === 0 && (
-                                        <Box sx={{
-                                            backgroundColor: 'background.paper',
-                                            minHeight: '30vh',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center'
-                                        }}>
-                                            <Typography
-                                                variant="h6"
-                                                sx={{color: 'text.secondary'}}>
-                                                No news available
-                                            </Typography>
-                                        </Box>
-                                    )}
+                                    <Divider variant="fullWidth" light={true} sx={{my: 4}}/>
 
+                                    <Typography variant="h5" sx={{color: 'text.secondary'}}>
+                                        Related Articles
+                                    </Typography>
 
                                     {
                                         article && article.relatedArticles && article.relatedArticles.length > 0 && (
@@ -176,6 +165,23 @@ const BlogDetailPage = () => {
                                             </Grid>
                                         )
                                     }
+
+                                    {article && article.relatedArticles && article.relatedArticles.length === 0 && (
+                                        <Box sx={{
+                                            backgroundColor: 'background.paper',
+                                            minHeight: '30vh',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}>
+                                            <Typography
+                                                variant="h6"
+                                                sx={{color: 'text.secondary'}}>
+                                                No articles available
+                                            </Typography>
+                                        </Box>
+                                    )}
+
                                 </Container>
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
