@@ -307,7 +307,7 @@ const HomePage = () => {
                                     sx={{
                                         height: '100%',
                                         width: '100%',
-                                        objectFit: 'contain',
+                                        objectFit: 'cover',
                                         objectPosition: 'center'
                                     }}/>
                             </Grid>

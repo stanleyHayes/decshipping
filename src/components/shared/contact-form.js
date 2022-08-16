@@ -67,7 +67,7 @@ const ContactForm = ({title, caption}) => {
                         <Grid container={true} spacing={2}>
                             <Grid item={true} xs={12} md={6}>
                                 <Typography variant="body2" sx={{color: 'text.secondary', mb: 1, fontWeight: 'bold'}}>
-                                    Write Your Comment Here
+                                    Name
                                 </Typography>
                                 <TextField
                                     fullWidth={true}
@@ -88,7 +88,7 @@ const ContactForm = ({title, caption}) => {
                             </Grid>
                             <Grid item={true} xs={12} md={6}>
                                 <Typography variant="body2" sx={{color: 'text.secondary', mb: 1, fontWeight: 'bold'}}>
-                                    Write Your Comment Here
+                                    Email
                                 </Typography>
                                 <TextField
                                     fullWidth={true}

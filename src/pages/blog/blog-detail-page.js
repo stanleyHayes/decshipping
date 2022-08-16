@@ -3,6 +3,7 @@ import {
     Alert,
     AlertTitle,
     Box,
+    Chip,
     Container,
     Divider,
     Grid,
@@ -17,9 +18,11 @@ import {useSelector} from "react-redux";
 import {selectArticle} from "../../redux/features/article/article-slice";
 import {useFormik} from "formik";
 import * as yup from "yup";
-import {DarkMode} from "@mui/icons-material";
+import {SearchOutlined} from "@mui/icons-material";
 import PopularArticle from "../../components/shared/popular-article";
 import moment from "moment";
+import {Skeleton} from "@mui/lab";
+import RelatedArticle from "../../components/shared/related-article";
 
 const BlogDetailPage = () => {
 
@@ -47,15 +50,15 @@ const BlogDetailPage = () => {
                         <Box sx={{height: '100%', display: 'flex', alignItems: 'center'}}>
                             <Container>
                                 <Grid container={true} spacing={4} alignItems="center">
-                                    <Grid item={true} xs={12} md={6}>
-                                        <Typography variant="h3" sx={{color: 'white', mb: 2}}>
-                                            Our Blog
+                                    <Grid item={true} xs={12}>
+                                        <Typography align="center" variant="h5" sx={{color: 'white', mb: 2}}>
+                                            {article && article.title}
                                         </Typography>
                                     </Grid>
                                 </Grid>
                             </Container>
                         </Box>}
-                    image={banner}
+                    image={article && article.image}
                     backgroundColor="#000000"/>
                 {articleLoading && <LinearProgress variant="query" color="secondary"/>}
 
@@ -67,50 +70,121 @@ const BlogDetailPage = () => {
                             </Alert>
                         )}
                         <Grid container={true} spacing={4}>
-                            <Grid item={true} xs={12} md={9}>
-                                {article && (
-                                    <Stack
-                                        divider={<Divider variant="fullWidth" light={true}/>}
-                                        direction="column"
-                                        spacing={2}>
-                                        <Typography variant="h4" sx={{color: 'text.primary'}}>
-                                            {article.title}
-                                        </Typography>
+                            <Grid item={true} xs={12} md={8}>
+                                <Container>
+                                    {!article && (
+                                        <Box>
 
-                                        <Stack direction="row" spacing={2} alignItems="center">
-                                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
-                                                {article && moment(article.createdAt).format('MMMM, DD YYYY')}
+                                        </Box>
+                                    )}
+                                    <Stack direction="column" spacing={4} sx={{mb: 4}}>
+                                        {articleLoading ? (
+                                            <Skeleton variant="text" animation="pulse"/>
+                                        ) : (
+                                            <Typography variant="h4" sx={{color: 'text.primary', fontWeight: 200, mb: 4}}>
+                                                {article && article.title}
                                             </Typography>
-                                            {article &&
-                                                (
-                                                    <Typography
-                                                        variant="body1"
-                                                        sx={{color: 'text.secondary'}}>
-                                                        &#8226;
-                                                    </Typography>
-                                                )
-                                            }
+                                        )}
+                                        {articleLoading ? (
+                                            <Stack direction="column" spacing={2}>
+                                                <Skeleton variant="rectangular" width="100%" height={100}
+                                                          animation="pulse"/>
+                                                <Skeleton variant="rectangular" width="100%" height={100}
+                                                          animation="pulse"/>
+                                                <Skeleton variant="rectangular" width="100%" height={100}
+                                                          animation="pulse"/>
+                                            </Stack>
+                                        ) : (
+                                            <Stack direction="column" spacing={2}>
+                                                {article && article.details && article.details.map((paragraph, index) => {
+                                                    return (
+                                                        <Typography
+                                                            key={index}
+                                                            variant="body2"
+                                                            sx={{color: 'text.secondary'}}>
+                                                            {paragraph}
+                                                        </Typography>
+                                                    )
+                                                })}
+                                            </Stack>
+                                        )}
 
-                                            <Typography variant="body2" sx={{color: 'text.secondary'}}>
-                                                {`by ${article?.author?.name}, ${article?.author?.role} at DEC Shipping`}
-                                            </Typography>
-                                        </Stack>
+                                        {articleLoading ? (
+                                            <Skeleton variant="text" animation="pulse"/>
+                                        ) : (
+                                            <Stack direction="row" spacing={2} alignItems="center">
+                                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
+                                                    {article && moment(article.createdAt).format('MMMM, DD YYYY')}
+                                                </Typography>
+                                                {article &&
+                                                    (
+                                                        <Typography
+                                                            variant="body1"
+                                                            sx={{color: 'text.secondary'}}>
+                                                            &#8226;
+                                                        </Typography>
+                                                    )
+                                                }
+
+                                                <Chip label={article && article.category} variant="filled"/>
+
+                                                {article &&
+                                                    (
+                                                        <Typography
+                                                            variant="body1"
+                                                            sx={{color: 'text.secondary'}}>
+                                                            &#8226;
+                                                        </Typography>
+                                                    )
+                                                }
+
+                                                <Typography variant="body2" sx={{color: 'text.secondary'}}>
+                                                    {`by ${article?.author?.name}, ${article?.author?.role}`}
+                                                </Typography>
+                                            </Stack>
+                                        )}
+
                                     </Stack>
-                                )}
 
-                                {!article && (
-                                    <Box>
+                                    {article && article.relatedArticles && article.relatedArticles.length === 0 && (
+                                        <Box sx={{
+                                            backgroundColor: 'background.paper',
+                                            minHeight: '30vh',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}>
+                                            <Typography
+                                                variant="h6"
+                                                sx={{color: 'text.secondary'}}>
+                                                No news available
+                                            </Typography>
+                                        </Box>
+                                    )}
 
-                                    </Box>
-                                )}
+
+                                    {
+                                        article && article.relatedArticles && article.relatedArticles.length > 0 && (
+                                            <Grid sx={{mb: 6}} container={true} spacing={4}>
+                                                {article && article.relatedArticles.map(article => {
+                                                    return (
+                                                        <Grid key={article._id} item={true} xs={12} md={6}>
+                                                            <RelatedArticle article={article}/>
+                                                        </Grid>
+                                                    )
+                                                })}
+                                            </Grid>
+                                        )
+                                    }
+                                </Container>
                             </Grid>
-                            <Grid item={true} xs={12} md={3}>
+                            <Grid item={true} xs={12} md={4}>
                                 <form onSubmit={formik.handleSubmit}>
                                     <Typography variant="body2" sx={{color: 'text.primary', fontWeight: 'bold', mb: 1}}>
                                         Search Here
                                     </Typography>
                                     <Grid container={true} alignItems="center">
-                                        <Grid item={true} xs={12} md={8}>
+                                        <Grid item={true} xs={12} md={10}>
                                             <TextField
                                                 fullWidth={true}
                                                 value={formik.values.query}
@@ -128,17 +202,17 @@ const BlogDetailPage = () => {
                                                 margin="dense"
                                             />
                                         </Grid>
-                                        <Grid item={true} xs="auto">
-                                            <DarkMode
+                                        <Grid item={true} xs="auto" md={2}>
+                                            <SearchOutlined
+                                                color="secondary"
                                                 sx={{
-                                                    backgroundColor: 'light.active',
-                                                    padding: 0.4,
-                                                    fontSize: 32,
-                                                    color: 'white'
+                                                    backgroundColor: 'primary.main',
+                                                    padding: 1,
+                                                    fontSize: 40,
+                                                    mt: 0.5
                                                 }}
                                                 onClick={formik.handleSubmit}
                                             />
-
                                         </Grid>
                                     </Grid>
                                 </form>
@@ -163,6 +237,7 @@ const BlogDetailPage = () => {
                         </Grid>
                     </Container>
                 </Box>
+
             </Box>
         </Layout>
     )

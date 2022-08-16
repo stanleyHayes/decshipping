@@ -27,7 +27,9 @@ const articleSlice = createSlice({
         articleMessage: null,
         articleError: null,
         articles: [...articles],
-        article: null
+        article: {
+            ...articles[0]
+        }
     },
     reducers: {},
     extraReducers: builder => {

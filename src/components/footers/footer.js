@@ -25,57 +25,77 @@ const Footer = () => {
                         <Stack spacing={2} direction="row" justifyContent="space-around">
                             <Link href="#" target="_blank" rel="noopener" underline="none">
                                 <Facebook
-                                    color="primary"
                                     sx={{
                                         backgroundColor: 'light.yellow',
+                                        color:"primary.main",
                                         padding: 1,
                                         fontSize: 36,
                                         borderBottomRightRadius: 4,
                                         borderTopRightRadius: 12,
                                         borderBottomLeftRadius: 12,
-                                        borderTopLeftRadius: 4
+                                        borderTopLeftRadius: 4,
+                                        '&:hover': {
+                                            transition: 'all 300ms ease-in-out',
+                                            backgroundColor: 'light.secondary',
+                                            color: 'secondary.main'
+                                        }
                                     }}/>
                             </Link>
 
                             <Link href="#" target="_blank" rel="noopener" underline="none">
                                 <Twitter
-                                    color="primary"
                                     sx={{
                                         backgroundColor: 'light.yellow',
+                                        color:"primary.main",
                                         padding: 1,
                                         fontSize: 36,
                                         borderBottomRightRadius: 4,
                                         borderTopRightRadius: 12,
                                         borderBottomLeftRadius: 12,
-                                        borderTopLeftRadius: 4
+                                        borderTopLeftRadius: 4,
+                                        '&:hover': {
+                                            transition: 'all 300ms ease-in-out',
+                                            backgroundColor: 'light.secondary',
+                                            color: 'secondary.main'
+                                        }
                                     }}/>
                             </Link>
 
                             <Link href="#" target="_blank" rel="noopener" underline="none">
                                 <LinkedIn
-                                    color="primary"
                                     sx={{
                                         backgroundColor: 'light.yellow',
+                                        color:"primary.main",
                                         padding: 1,
                                         fontSize: 36,
                                         borderBottomRightRadius: 4,
                                         borderTopRightRadius: 12,
                                         borderBottomLeftRadius: 12,
-                                        borderTopLeftRadius: 4
+                                        borderTopLeftRadius: 4,
+                                        '&:hover': {
+                                            transition: 'all 300ms ease-in-out',
+                                            backgroundColor: 'light.secondary',
+                                            color: 'secondary.main'
+                                        }
                                     }}/>
                             </Link>
 
                             <Link href="#" rel="noopener" target="_blank" underline="none">
                                 <Instagram
-                                    color="primary"
                                     sx={{
                                         backgroundColor: 'light.yellow',
+                                        color:"primary.main",
                                         padding: 1,
                                         fontSize: 36,
                                         borderBottomRightRadius: 4,
                                         borderTopRightRadius: 12,
                                         borderBottomLeftRadius: 12,
-                                        borderTopLeftRadius: 4
+                                        borderTopLeftRadius: 4,
+                                        '&:hover': {
+                                            transition: 'all 300ms ease-in-out',
+                                            backgroundColor: 'light.secondary',
+                                            color: 'secondary.main'
+                                        }
                                     }}/>
                             </Link>
                         </Stack>
