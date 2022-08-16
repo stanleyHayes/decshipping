@@ -23,7 +23,7 @@ const lightTheme = createTheme({
             default: '#e8eaed',
             light: 'rgba(232,234,237,0.3)',
             appBar: 'rgba(91,91,91,0.85)',
-            transparent: 'rgba(232,234,237,0.3)'
+            transparent: 'rgba(232,234,237,0.15)'
         },
         light: {
             secondary: 'rgba(26,115,232,0.3)',

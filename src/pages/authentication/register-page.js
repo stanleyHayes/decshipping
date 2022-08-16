@@ -17,7 +17,7 @@ import {
     Typography,
     useTheme
 } from "@mui/material";
-import loginLogo from "./../../assets/images/sign-up.png";
+import loginLogo from "../../assets/images/auth/sign-up.png";
 import {useFormik} from "formik";
 import * as yup from "yup";
 import "yup-phone";

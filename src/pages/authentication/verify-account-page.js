@@ -10,7 +10,7 @@ import {
     Stack,
     Typography
 } from "@mui/material";
-import loginLogo from "./../../assets/images/verify-otp.png";
+import loginLogo from "../../assets/images/auth/verify-otp.png";
 import {useFormik} from "formik";
 import * as yup from "yup";
 import "yup-phone";

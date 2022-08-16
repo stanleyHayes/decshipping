@@ -1,4 +1,4 @@
-import {Box, Stack} from "@mui/material";
+import {Box, SliderTrack, Stack} from "@mui/material";
 import SidebarLink from "../shared/sidebar-link";
 import {useLocation} from "react-router-dom";
 import {
@@ -14,7 +14,7 @@ import {
     InfoOutlined,
     LightMode,
     MiscellaneousServices,
-    MiscellaneousServicesOutlined
+    MiscellaneousServicesOutlined, SpatialTrackingOutlined
 } from "@mui/icons-material";
 import {closeDrawer, selectUI, toggleTheme} from "../../redux/features/ui/ui-slice";
 import {useDispatch, useSelector} from "react-redux";
@@ -113,6 +113,38 @@ const MobileSidebar = () => {
                     }
                 />
 
+                <SidebarLink
+                    active={pathname === '/tracking'}
+                    label="Tracking"
+                    path="/tracking"
+                    icon={pathname === '/tracking' ? (
+                        <SliderTrack
+                            sx={{
+                                cursor: 'pointer',
+                                color: 'secondary.main',
+                                borderTopRightRadius: 32,
+                                borderBottomRightRadius: 0,
+                                borderBottomLeftRadius: 32,
+                                borderTopLeftRadius: 32,
+                                padding: 1,
+                                fontSize: 18,
+                                backgroundColor: 'light.secondary'
+                            }}/>
+                    ) : (
+                        <SpatialTrackingOutlined
+                            sx={{
+                                cursor: 'pointer',
+                                color: 'text.secondary',
+                                borderTopRightRadius: 32,
+                                borderBottomRightRadius: 0,
+                                borderBottomLeftRadius: 32,
+                                borderTopLeftRadius: 32,
+                                padding: 1,
+                                fontSize: 18
+                            }}/>
+                    )
+                    }
+                />
                 <SidebarLink
                     label="Services"
                     active={pathname === '/services'}

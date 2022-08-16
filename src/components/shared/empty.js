@@ -1,5 +1,5 @@
 import {Stack} from "@mui/material";
-import emptyBox from "../../assets/images/not-found.png";
+import emptyBox from "../../assets/images/auth/not-found.png";
 
 const Empty = ({title, message, button}) => {
 

@@ -7,6 +7,7 @@ import {SnackbarProvider} from "notistack";
 import {BrowserRouter} from "react-router-dom";
 import store from "./redux/app/store";
 import {Provider} from "react-redux";
+import 'react-vertical-timeline-component/style.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

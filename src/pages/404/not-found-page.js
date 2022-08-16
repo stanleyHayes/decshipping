@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout/layout";
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
-import notFoundImage from "./../../assets/images/404.png";
+import notFoundImage from "../../assets/images/auth/404.png";
 import {Link} from "react-router-dom";
 import {ArrowRightAlt} from "@mui/icons-material";
 

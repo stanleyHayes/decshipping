@@ -9,7 +9,7 @@ import {
     Stack,
     Typography
 } from "@mui/material";
-import loginLogo from "./../../assets/images/reset-password.png";
+import loginLogo from "../../assets/images/auth/reset-password.png";
 import {useFormik} from "formik";
 import * as yup from "yup";
 import "yup-phone";

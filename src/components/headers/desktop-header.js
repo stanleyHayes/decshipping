@@ -28,6 +28,7 @@ const DesktopHeader = () => {
                     <Stack spacing={1} justifyContent="space-between" alignItems="center" direction="row">
                         <NavLink path="/" label="Home" active={pathname === '/'}/>
                         <NavLink path="/services" label="Services" active={pathname === '/services'}/>
+                        <NavLink label="Tracking" path="/tracking" active={pathname === '/tracking'}/>
                         <NavLink path="/about" label="About" active={pathname === '/about'}/>
                         <NavLink path="/articles" label="Blog" active={pathname === '/articles'}/>
                         <NavLink path="/contact" label="Contact" active={pathname === '/contact'}/>

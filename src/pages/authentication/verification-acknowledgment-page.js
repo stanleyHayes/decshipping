@@ -1,5 +1,5 @@
 import {Box, Button, Container, Grid, Stack, Typography} from "@mui/material";
-import loginLogo from "./../../assets/images/account-success.png";
+import loginLogo from "../../assets/images/auth/account-success.png";
 import "yup-phone";
 import {Link} from "react-router-dom";
 import Carousel from "react-material-ui-carousel";

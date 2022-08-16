@@ -20,6 +20,8 @@ import NotFoundPage from "./pages/404/not-found-page";
 import ServicesPage from "./pages/services/services-page";
 import ContactPage from "./pages/contact/contact-page";
 import FAQPage from "./pages/others/faq-page";
+import TrackingPage from "./pages/tracking/tracking-page";
+import TrackingDetailPage from "./pages/tracking/tracking-detail-page";
 
 function App() {
   const {themeVariant} = useSelector(selectUI);
@@ -33,6 +35,8 @@ function App() {
           <Route element={<ContactPage/>} path="/contact"/>
           <Route element={<ServicesPage/>} path="/services"/>
           <Route element={<BlogPage/>} path="/articles"/>
+          <Route element={<TrackingPage/>} exact={true} path="/tracking"/>
+          <Route element={<TrackingDetailPage/>} exact={true} path="/tracking/:tracking"/>
           <Route element={<BlogDetailPage/>} path="/articles/:articleID"/>
           <Route element={<VerifyAccountPage/>} exact={true} path="/auth/verify/:token"/>
           <Route element={<VerificationAcknowledgmentPage/>} exact={true} path="/account/verify/success"/>
