@@ -13,7 +13,7 @@ const DesktopHeader = () => {
     const {themeVariant} = useSelector(selectUI);
 
     return (
-        <Toolbar variant="dense">
+        <Toolbar variant="regular">
             <Container maxWidth="xl">
                 <Stack justifyContent="space-between" alignItems="center" direction="row">
                     <Stack justifyContent="space-between" alignItems="center" direction="row">
