@@ -16,7 +16,7 @@ const Layout = ({children}) => {
                 backgroundColor: 'background.paper',
                 flexDirection: 'column'
             }}>
-                <Box sx={{mb: 6}}>
+                <Box sx={{mb: 7}}>
                     <Header/>
                 </Box>
                 <Box sx={{flex: 1}}>
