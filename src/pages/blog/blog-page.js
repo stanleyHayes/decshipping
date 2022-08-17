@@ -1,13 +1,12 @@
 import Layout from "../../components/layout/layout";
 import {Box, Container, Divider, Grid, Stack, TextField, Typography} from "@mui/material";
-import Overlay from "../../components/shared/overlay";
 import banner from "../../assets/images/banners/home.jpg";
 import Article from "../../components/shared/article";
 import {useSelector} from "react-redux";
 import {selectArticle} from "../../redux/features/article/article-slice";
 import {useFormik} from "formik";
 import * as yup from "yup";
-import {DarkMode, SearchOutlined} from "@mui/icons-material";
+import {SearchOutlined} from "@mui/icons-material";
 import PopularArticle from "../../components/shared/popular-article";
 import Banner from "../../components/shared/banner";
 

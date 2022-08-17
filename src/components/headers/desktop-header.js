@@ -13,7 +13,7 @@ const DesktopHeader = () => {
     const {themeVariant} = useSelector(selectUI);
 
     return (
-        <Toolbar variant="regular">
+        <Toolbar variant="dense">
             <Container maxWidth="xl">
                 <Stack justifyContent="space-between" alignItems="center" direction="row">
                     <Stack justifyContent="space-between" alignItems="center" direction="row">
@@ -21,7 +21,7 @@ const DesktopHeader = () => {
                             <img
                                 src={logo}
                                 alt=""
-                                style={{width: 50, height: 50, objectFit: 'cover', objectPosition: 'center'}}
+                                style={{width: 50, height: 40, objectFit: 'cover', objectPosition: 'center'}}
                             />
                         </Link>
                     </Stack>

@@ -16,9 +16,9 @@ const NavLink = ({path, label, active}) => {
                 size="large"
                 variant="text"
                 sx={{
-                    color: active ? 'text.active' : 'text.inactive',
-                    borderBottomWidth: active ? 3 : 0,
-                    borderBottomColor: active ? 'light.yellow' : false,
+                    color: active ? 'primary.main' : 'text.primary',
+                    borderBottomWidth: active ? 5 : 0,
+                    borderBottomColor: active ? 'primary.main' : false,
                     borderBottomStyle: 'solid',
                     textTransform: 'capitalize',
                 }}>

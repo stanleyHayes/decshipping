@@ -9,7 +9,7 @@ const lightTheme = createTheme({
             main: '#f9ab00'
         },
         secondary: {
-            main: '#000000'
+            main: '#ffffff'
         },
         text: {
             primary: '#202124',

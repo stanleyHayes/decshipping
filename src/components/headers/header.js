@@ -4,7 +4,7 @@ import DesktopHeader from "./desktop-header";
 
 const Header = () => {
     return (
-        <AppBar color="secondary" elevation={0}>
+        <AppBar color="secondary" sx={{backdropFilter: 'blur(7px)', opacity: 0.8}} elevation={0}>
             <Box sx={{display: {xs: 'none', lg: 'block'}}}>
                 <DesktopHeader/>
             </Box>

@@ -9,7 +9,6 @@ import {
     FormHelperText,
     Grid,
     InputAdornment,
-    InputLabel,
     LinearProgress,
     OutlinedInput,
     Stack,
