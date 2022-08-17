@@ -21,7 +21,7 @@ const DesktopHeader = () => {
                             <img
                                 src={logo}
                                 alt=""
-                                style={{width: 50, height: 40, objectFit: 'cover', objectPosition: 'center'}}
+                                style={{width: 50, height: 50, objectFit: 'contain', objectPosition: 'center'}}
                             />
                         </Link>
                     </Stack>
