@@ -75,8 +75,8 @@ const HomePage = () => {
                     children={
                         <Box sx={{height: '100%', display: 'flex', alignItems: 'center'}}>
                             <Container>
-                                <Grid container={true} spacing={4} alignItems="center">
-                                    <Grid item={true} xs={12} md={6}>
+                                <Grid container={true} spacing={4} alignItems="center" justifyContent="flex-end">
+                                    <Grid item={true} xs={12} md={4}>
                                         <Typography variant="h3" sx={{color: 'white', mb: 2}}>
                                             DEC Shipping
                                         </Typography>
