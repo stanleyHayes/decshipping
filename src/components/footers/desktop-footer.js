@@ -66,7 +66,7 @@ const DesktopFooter = () => {
                                 <Typography
                                     variant="body2"
                                     sx={{color: 'text.secondary'}}>
-                                    hello@decshipping.com
+                                    info@decshipping.com
                                 </Typography>
                             </MUILink>
                         </Stack>
