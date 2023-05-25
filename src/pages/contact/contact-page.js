@@ -3,7 +3,6 @@ import {Box, Container, Grid, Link as MUILink, Link, Stack, Typography} from "@m
 import banner from "./../../assets/images/banners/contact.jpg";
 import Banner from "../../components/shared/banner";
 import {Facebook, Instagram, LinkedIn, Twitter} from "@mui/icons-material";
-import "yup-phone";
 import ContactForm from "../../components/shared/contact-form";
 
 const ContactPage = () => {

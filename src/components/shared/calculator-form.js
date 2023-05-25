@@ -25,7 +25,7 @@ const CalculatorForm = () => {
             senderName: yup.string().required('First name required'),
             senderPhone: yup.string().required('Last name required'),
             email: yup.string().email('Invalid email').required('email required'),
-            phone: yup.string().phone('Invalid phone').required('Phone name required'),
+            phone: yup.string().required('Phone name required'),
             weight: yup.string().required('Subject required'),
             fragile: yup.string().required('Message required'),
             receiverAddress: yup.string().required('Receiver Address required'),
